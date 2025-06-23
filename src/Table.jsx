@@ -4,7 +4,7 @@ import "./style.css";
 import TableRow from "./TableRow.jsx"
 
 const Table = (props) => {
-    const { rowCount } = props;
+    const { rowCount, columnCount } = props;
     const rowArray = Array(rowCount).fill(null);
     return (
         <table className="table">
@@ -13,8 +13,8 @@ const Table = (props) => {
                 <TableRow></TableRow>
                 <TableRow></TableRow>
                 {rowArray.map((row) => (
-                    <TableRow></TableRow>
-                ))};
+                    <TableRow columnCount={columnCount}></TableRow>
+                ))}
             </tbody>
         </table>
     );

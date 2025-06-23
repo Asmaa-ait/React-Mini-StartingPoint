@@ -8,21 +8,20 @@ const App = () => {
   const [rowCount, setRowCount] = useState(0);
   const addRow = () => {
     setRowCount(rowCount + 1); 
-};
+  };
 
-const [columnCount,setColumnCount] = useState(0);
-const addColumn =() => {
-  setColumnCount(columnCount +1);
-}
+  const [columnCount, setColumnCount] = useState(0);
+  const addColumn = () => {
+    setColumnCount(columnCount + 1);
+  };
 
   return (
     <div className="app">
       <h1 className="title">Grid Maker</h1>
-      <Table rowCount={rowCount}></Table>
-
+      <Table rowCount={rowCount} columnCount={columnCount}></Table>
       <div>
         <button id="add-row" onClick={addRow}>Add Row </button>
-        <button id="add-column">Add Column</button>
+        <button id="add-column" onClick={addColumn}>Add Column</button>
         <button id="remove-row">Remove Row</button> 
         <button id="remove-column">Remove Column</button>
         <select id="color-select">
