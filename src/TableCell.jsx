@@ -4,7 +4,7 @@ import "./style.css";
 
 const TableCell = () => {
     return(
-            <td></td>
+            <td class="cell"></td>
     );
 }
 

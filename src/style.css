@@ -26,14 +26,21 @@ body {
 }
 
 .table {
-  background-color: #ffffff;
   margin: 0 auto 20px auto;
 }
 
-.td {
+.cell {
   width: 30px;
   height: 30px;
-  border: 1px solid #444;
   transition: background-color 0.3s ease;
   cursor: pointer;
+  background-color: #ffffff;
 }
+
+button, select {
+  padding: 1px;
+  margin-left: 5px;
+  font-size: 14px;
+}
+
+
