@@ -24,3 +24,16 @@ body {
   justify-content: center;
   min-height: 100vh;
 }
+
+.table {
+  background-color: #ffffff;
+  margin: 0 auto 20px auto;
+}
+
+.td {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #444;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}

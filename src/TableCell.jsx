@@ -4,8 +4,8 @@ import "./style.css";
 
 const TableCell = () => {
     return(
-        <div>
             <td></td>
-        </div>
     );
 }
+
+export default TableCell;

@@ -1,7 +1,7 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
 import "./style.css";
-import "./Table.jsx";
+import Table from "./Table.jsx";
 
 const App = () => {
   return (
@@ -12,5 +12,5 @@ const App = () => {
   );
 };
 
-const root = createRoot(document.getElementById("app"));
+const root = createRoot(document.getElementById("root"));
 root.render(<App />);
