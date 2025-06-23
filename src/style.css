@@ -1,26 +1,26 @@
+/* Please feel free to change the CSS as you see fit! This is just a starting point. */
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
-
 body {
-  background-color: #2a7b9b;
+  background-color: #add8e6;
 }
 
-.title {
-  color: #ffffff;
-  font-size: 3rem;
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 2rem;
-}
-
-.app {
+#root {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+td {
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
 }
