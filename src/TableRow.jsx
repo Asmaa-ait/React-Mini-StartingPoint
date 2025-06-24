@@ -5,15 +5,11 @@ import TableCell from "./TableCell.jsx";
 import "./app.jsx";
 
 const TableRow = (props) => {
-    const { columnCount } = props;
-    const columnArray = Array(columnCount).fill(null);
+    const { rowColors, rowIndex, setGrid} = props;
     return(
-        <tr columnCount={columnCount}>
-            <TableCell></TableCell>
-            <TableCell></TableCell>
-            <TableCell></TableCell>
-            {columnArray.map((row) => (
-                <TableCell></TableCell>
+        <tr>
+            {rowColors.map((color, colIndex) => (
+                <TableCell key={colIndex} color={color} rowIndex={rowIndex} colIndex={colIndex} setGrid={setGrid}/>
             ))}
         </tr>
     );
